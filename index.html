@@ -298,8 +298,7 @@
                     categoryAxis.fontSize = 15;
                     
                     var  valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-                    valueAxis.min = 30000000;
-                    valueAxis.max = 41000000;
+                    valueAxis.min = 0;
                     valueAxis.title.text = "Population Size";
                     valueAxis.fontSize = 15;
                     
@@ -340,9 +339,8 @@
                     <div id="chartdiv"></div>
     </div>
 
-    <div id="imagination" class="step" data-x="-8000" data-y="-4000" data-scale="2">
+    <!-- <div id="imagination" class="step" data-x="-8000" data-y="-4000" data-scale="2">
             <div id="chartdiv2"></div>
-            <!-- Styles -->
     <style>
             #chartdiv2 {
               width: 800px;
@@ -351,23 +349,17 @@
             
             </style>
             
-            <!-- Resources -->
             <script src="https://www.amcharts.com/lib/4/core.js"></script>
             <script src="https://www.amcharts.com/lib/4/charts.js"></script>
             <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
             
-            <!-- Chart code -->
             <script>
             am4core.ready(function() {
             
-            // Themes begin
             am4core.useTheme(am4themes_animated);
-            // Themes end
             
-            // Create chart instance
             var chart = am4core.create("chartdiv2", am4charts.XYChart);
             
-            // Add data
             chart.data = [ {
               "ageGroup": "0 - 4",
               "malePop": 37648694,
@@ -384,7 +376,6 @@
             title.fontSize = 25;
             title.marginBottom = 5;
             
-            // Create axes
             var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
             categoryAxis.dataFields.category = "ageGroup";
             categoryAxis.title.text = "Age Groups";
@@ -427,10 +418,8 @@
             }); // end am4core.ready()
             </script>
             
-            <!-- HTML -->
             
-            <!-- <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p> -->
-        </div>
+        </div> -->
 
     <div id="barmultiple" class="step" data-x="-8000" data-y="-8000" data-scale="2">
             <style>
