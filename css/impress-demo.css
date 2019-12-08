@@ -57,6 +57,26 @@ img{
     height: 600px;
     width: 1000px
 }
+
+#map{
+    margin-left: -200px;
+}
+
+#imagination{
+    margin-left: -400px;
+}
+
+#barmultiple{
+    margin-top: 400px;
+}
+
+#first{
+    margin-top: 100px;
+}
+
+#big{
+    margin-top:-200px;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -98,7 +118,7 @@ body {
     min-height: 740px;
 
     background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(182, 161, 161)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));

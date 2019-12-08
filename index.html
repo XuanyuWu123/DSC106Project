@@ -282,7 +282,7 @@
                     }];
             
                     let title = chart.titles.create();
-                    title.text = "Population (Baby Boy VS Baby Girl)";
+                    title.text = "Population (Baby Boy VS Baby Girl) in 2000";
                     title.fontSize = 25;
                     title.marginBottom = 5;
                     
@@ -298,6 +298,7 @@
                     categoryAxis.fontSize = 15;
                     
                     var  valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+                    valueAxis.min = 30000000;
                     valueAxis.min = 0;
                     valueAxis.title.text = "Population Size";
                     valueAxis.fontSize = 15;
@@ -330,6 +331,8 @@
                     // Add legend
                     chart.legend = new am4charts.Legend();
                     chart.legend.fontSize = 15;
+
+                    chart.tooltip.fontSize = 15;
                     }); // end am4core.ready()
                     </script>
                     
@@ -377,7 +380,7 @@
             }];
         
             let title = chart.titles.create();
-            title.text = "Population (Baby Boy VS Baby Girl)";
+            title.text = "Population (Baby Boy VS Baby Girl) in 2000 and 2010";
             title.fontSize = 25;
             title.marginBottom = 5;
             
@@ -419,6 +422,8 @@
     
             chart.legend = new am4charts.Legend();
             chart.legend.fontSize = 15;
+
+            chart.tooltip.fontSize = 15;
             }); // end am4core.ready()
             </script>
             
@@ -538,11 +543,11 @@
                 let illiteracy_fig =  {
             chart: {
                 height:  600,
-                width: 800,
+                width: 1000,
                 backgroundColor: 'transparent'
             },
             title: {
-                text: 'Illiteracy Rate Over Age 15 by Gender, 2002 2018'
+                text: 'Illiteracy Rate Over Age 15 by Gender, 2002 - 2018'
             },
     
             subtitle: {
@@ -578,7 +583,8 @@
             legend: {
                 layout: 'vertical',
                 align: 'right',
-                verticalAlign: 'middle'
+                verticalAlign: 'middle',
+                enabled: true
             },
     
             plotOptions: {
@@ -999,7 +1005,7 @@ function syncExtremes(e) {
     </div>
 
 
-    <div id="word" class="step" data-x="3500" data-y="2100" data-scale="1">
+    <div id="work" class="step" data-x="3500" data-y="2100" data-scale="1">
         <h10>Part IV: Work</h10>
         <img src='work.png'>
 
